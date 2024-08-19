@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0084ff;
+    color: #ffa500;
+}
+
+header {
+    background-color: #008000;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #ff4500;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.music-player {
+    text-align: center;
+}
+
+.music-player img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.music-player p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.controls button {
+    background-color: #006400;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-menu ul li {
+    margin-bottom: 10px;
+}
+
+.nav-menu ul li a {
+    color: #0000ff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #00bfff;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.trimpta-text {
+    text-align: center;
+    font-size: 20px;
+    color: #ffa500;
+}
+
+footer {
+    background-color: #800080;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-badges img {
+    margin: 5px;
+    vertical-align: middle;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    header, footer {
+        font-size: 18px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 14px;
+    }
+}
